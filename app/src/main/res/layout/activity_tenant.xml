@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tenantActivity"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_tenant_id"
+                    android:text="Are you looking for an empty house?"
+                    android:textStyle="italic"
+                    android:textColor="#000000"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_click_id"
+                    android:text="click"
+                    android:layout_below="@id/tv_tenant_id"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:textColor="#000000"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bt_next_id"
+                    android:text="Next"
+                    android:layout_below="@id/tv_tenant_id"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_landloard_id"
+                    android:text="Are you the Landloard / Landlady?"
+                    android:layout_marginStart="20dp"
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:layout_below="@id/bt_next_id"
+                    android:layout_marginTop="100dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_click2_id"
+                    android:text="click"
+                    android:layout_below="@id/tv_landloard_id"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:textColor="#000000"/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bt_next2_id"
+                    android:text="Next"
+                    android:layout_below="@id/tv_landloard_id"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:id="@+id/tv_uploadCostLocation_id"
+                    android:text="to upload pictures of empty houses, their cost and location."
+                    android:layout_below="@id/bt_next2_id"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="#000000"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

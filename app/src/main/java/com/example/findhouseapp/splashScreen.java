@@ -19,6 +19,7 @@ public class splashScreen extends AppCompatActivity {
     private Uri mUri;
     private CircularImageView profileCircularImageView;
     private static final int PICK_IMAGE_REQUEST =1;
+    private Button saveButton;
 
 
     @Override
@@ -29,6 +30,7 @@ public class splashScreen extends AppCompatActivity {
         uploadButton = (Button)findViewById(R.id.bt_upload_id);
         profileCircularImageView = (CircularImageView)findViewById(R.id.ci_image_id);
 
+
         uploadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,6 +38,19 @@ public class splashScreen extends AppCompatActivity {
                 ChooseImage ();
             }
         });
+
+        saveButton = (Button)findViewById(R.id.bt_save_id);
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent saveIntent = new Intent (getApplicationContext(),tenantActivity.class);
+                startActivity(saveIntent);
+            }
+        });
+
+
+
 
 
 

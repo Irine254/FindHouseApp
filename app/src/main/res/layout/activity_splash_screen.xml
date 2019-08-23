@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".splashScreen"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,9 +37,9 @@
                     android:text="upload"
                     android:layout_toRightOf="@id/ci_image_id"
                     android:layout_marginTop="150dp"
-                    android:textStyle="italic"
-                    android:textColor="#ffffff"
-                    android:background="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
                     android:layout_marginStart="20dp"/>
 
                 <TextView
@@ -90,6 +91,7 @@
                     android:id="@+id/et_enterphonenumber_id"
                     android:hint="Enter Phone Number"
                     android:textColor="#000000"
+                    android:inputType="number"
                     android:layout_below="@id/et_enterusername_id"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
@@ -101,6 +103,7 @@
                     android:id="@+id/et_enteremailaddress_id"
                     android:hint="Enter Email Address"
                     android:textColor="#000000"
+                    android:inputType="textEmailAddress"
                     android:layout_below="@id/et_enterphonenumber_id"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
@@ -125,9 +128,9 @@
                     android:text="save"
                     android:layout_below="@id/et_enteremailaddress_id"
                     android:layout_centerHorizontal="true"
-                    android:textStyle="italic"
-                    android:textColor="#ffffff"
-                    android:background="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:background="#ffffff"
                     android:layout_marginTop="20dp"
                     />
 
